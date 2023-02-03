@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 반응형 적용 -->
+    <meta name="viewport"
+          content="width=divice-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- 개발자가 만든 pybo CSS -->
+
+    <title>vita GOD</title>
+</head>
+<body>
+    <!-- 내비게이션바 -->
+    {% include "navbar.html" %}
+    <!-- 기본 템플릿 안에 삽입될 내용 -->
+    {% block content %}
+    {% endblock %}
+    <!-- 반드시 먼저 jQuery 자바스크립트 적용 -->
+    <!-- <script src="{% static 'jquery-3.6.3.min.js' %}"></script>-->
+    <!-- 그 다음 bootstrap 자바스크립트 적용 -->
+    <!-- <script src="{% static 'bootstrap.min.js' %}"></script>-->
+</body>
+</html>
